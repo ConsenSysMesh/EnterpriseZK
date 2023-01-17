@@ -28,15 +28,8 @@ func Verify(c *gin.Context) {
 		logger.LogError(err, "The request did not contain a body")
 		if err.Error() == "EOF" {
 			c.JSON(400, gin.H{"error": "The request did not contain a body"})
-		} else {
-			m := validateVerifyInput(err.Error())
-			if m != ("true") {
-				logger.LogError(m)
-				c.JSON(400, gin.H{"error": m})
-				return
-			}
-			c.JSON(400, gin.H{"error": err.Error()})
 		}
+		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
 

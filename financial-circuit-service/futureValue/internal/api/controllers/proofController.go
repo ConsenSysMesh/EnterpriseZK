@@ -28,18 +28,11 @@ func Proof(c *gin.Context) {
 	var p json.Data
 
 	if err := c.BindJSON(&p); err != nil {
-		logger.LogError(err, "The request did not contain a body")
+		logger.LogError(err)
 		if err.Error() == "EOF" {
 			c.JSON(400, gin.H{"error": "The request did not contain a body"})
-		} else {
-			m := validateProveInput(err.Error())
-			if m != ("true") {
-				logger.LogError(m)
-				c.JSON(400, gin.H{"error": m})
-				return
-			}
-			c.JSON(400, gin.H{"error": err.Error()})
 		}
+		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	} else {
 		if validateYears(p) == "false" {
