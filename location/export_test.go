@@ -1,9 +1,9 @@
 package location
 
 import (
+	"github.com/consensysMesh/internal/location"
 	"os"
 	"testing"
-	"vintrak/roughdraft/internal/location"
 
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark/backend/groth16"
