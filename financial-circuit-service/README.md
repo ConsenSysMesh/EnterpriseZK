@@ -1,5 +1,5 @@
 # Future Value Circuit Service
-Go (Golang) API REST Service with Gin Framework and Gnark Zero-Knowledge Location Circuit
+Go (Golang) API REST Service with Gin Framework and Gnark Zero-Knowledge Fututure Value Circuit
 
 ## 1. Clone and Change To FutureValue Directory
 

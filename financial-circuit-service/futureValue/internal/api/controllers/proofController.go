@@ -15,7 +15,7 @@ import (
 
 // generateProof godoc
 //
-//	@Summary      Generate a Zero-Knowledge Proof of Location
+//	@Summary      Generate a Zero-Knowledge Proof of Future Value
 //	@Description  post public and secret data to zero-knowledge service and receive a zk-proof and verifying key
 //	@Tags         proof
 //	@Accept       json

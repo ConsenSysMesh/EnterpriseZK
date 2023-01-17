@@ -19,13 +19,14 @@ type Circuit struct {
 	IntrestRate   frontend.Variable `gnark:",public"`
 	NumberOfYears frontend.Variable `gnark:",public"`
 }
-
-// PV = FV[1/(1+i)^N]
-// FV = PV[(1+i)^N]
-// FV = PV[(1000 + 1000(i))^N]
-
-// i – interest rate (comes in as i*1000)
-// N – number of years
+/*
+	PV formula, rewritten to eliminate division and avoid floating decimals
+	PV = FV[1/(1+i)^N]
+	FV = PV[(1+i)^N]
+	FV = PV[(1000 + 1000(i))^N]	
+	i – interest rate (comes in as i*1000)
+	N – number of years
+*/
 
 func (circuit *Circuit) Define(api frontend.API) error {
 
@@ -49,16 +50,19 @@ func (circuit *Circuit) Define(api frontend.API) error {
 	//-------
 
 	fv := api.Mul(output, circuit.PresentValue)
-	api.Println(fv)
 
 	expo := api.Mul(3, circuit.NumberOfYears)
 
-	//EXPONENT FOR 10^(3*N)--------
-	//This exponent loop multiplies takes expo value (3N) and multiplies 10 to that power
-	//This is the calculated formula to determine the length of the produced value,
-	//which is needed in order to properly align the end result with the comparison value
+	/* 
+		EXPONENT FOR 10^(3*N)
+		This exponent loop multiplies takes expo value (3N) and multiplies 10 to that power
+		This is the calculated formula to determine the length of the produced value,
+		which is needed in order to properly align the end result with the comparison value
+	*/
+	
 	modif := frontend.Variable(1)
 	bits2 := bits.ToBinary(api, expo, bits.WithNbDigits(bitSize))
+
 
 	for i := 0; i < len(bits2); i++ {
 		if i != 0 {
@@ -67,14 +71,9 @@ func (circuit *Circuit) Define(api frontend.API) error {
 		multiply := api.Mul(modif, 10)
 		modif = api.Select(bits2[len(bits2)-1-i], multiply, modif)
 	}
-	//-------
+	
 
-	api.Println(modif)
 	fv3 := api.Mul(modif, circuit.FutureValue)
-
-	api.Println(api.Add(fv3, modif))
-	api.Println(fv3)
-	api.Println(api.Sub(fv3, modif))
 
 	api.AssertIsEqual(api.Cmp(api.Sub(fv3, modif), fv), -1)
 	api.AssertIsEqual(api.Cmp(api.Add(fv3, modif), fv), 1)

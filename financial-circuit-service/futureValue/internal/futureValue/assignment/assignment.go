@@ -5,7 +5,7 @@ import (
 	futureValue "futurevalue/internal/futureValue"
 )
 
-func AssignFullLocationCircuit(d json.Data) *futureValue.Circuit {
+func AssignFullFutureValueCircuit(d json.Data) *futureValue.Circuit {
 	assignment := &futureValue.Circuit{
 		FutureValue:   d.FutureValue,
 		PresentValue:  d.PresentValue,
@@ -15,7 +15,7 @@ func AssignFullLocationCircuit(d json.Data) *futureValue.Circuit {
 	return assignment
 }
 
-func AssignPublicLocationCircuit(d json.PublicData) *futureValue.Circuit {
+func AssignPublicFutureValueCircuit(d json.PublicData) *futureValue.Circuit {
 	assignment := &futureValue.Circuit{
 		NumberOfYears: d.NumberOfYears,
 		IntrestRate:   int64(d.IntrestRate * 1000),

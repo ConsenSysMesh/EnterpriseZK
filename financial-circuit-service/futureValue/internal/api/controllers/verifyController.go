@@ -13,7 +13,7 @@ import (
 
 // verifyProod godoc
 //
-//	@Summary      Verify a Zero-knowledge Proof of Location
+//	@Summary      Verify a Zero-knowledge Proof of Future Value
 //	@Description  post a zero-knowledge proof, verifying key, and public witness and receive validation of zk-proof
 //	@Tags         verify
 //	@Accept       json

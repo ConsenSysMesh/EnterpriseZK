@@ -12,7 +12,7 @@ import (
 )
 
 func VerifyProof(d json.PublicData, proof interface{}, verifyingKey string) error {
-	assignment := assignment.AssignPublicLocationCircuit(d)
+	assignment := assignment.AssignPublicFutureValueCircuit(d)
 
 	vk, err := hex.DecodeString(verifyingKey)
 	if err != nil {

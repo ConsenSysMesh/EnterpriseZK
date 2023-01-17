@@ -14,7 +14,7 @@ import (
 )
 
 func GenerateProof(d json.Data) (groth16.Proof, *string, error) {
-	assignment := assignment.AssignFullLocationCircuit(d)
+	assignment := assignment.AssignFullFutureValueCircuit(d)
 
 	witness, err := frontend.NewWitness(assignment, ecc.BN254.ScalarField())
 	if err != nil {
