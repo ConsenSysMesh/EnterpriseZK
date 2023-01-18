@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "c0da0b75-b572-42fc-92ca-1141dbaff426",
+		"name": "futurevalue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21156984"
+	},
+	"item": [
+		{
+			"name": "prove-happyPath",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/prove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"prove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify-HappyPath",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"AssetIdentifier\": \"1\",\r\n\t\t\"ApprovedLatitude\":   1,\r\n\t\t\"ApprovedLongitude\":  1,\r\n\t\t\"MaxAllowedDistance\": 4,\r\n    \t\"RootHash\": \"20010843042483646368857989544778220800867161747001321856645510996980164522962\",\r\n    \t\"Proof\": \"e399622e07201cb4659e76354a95f983d89f4305868f2f1a91e4a92e29d619539d9af729e9b6d4f166bc58b35384bd7b61b4666790b0bb0290695f4b2e8fa5d227cc5e1c573e60218670151bd711ab2ca2d17b767728fa910e7e49072b3f1884d355022a71ef8af2ee9318373d807e2b8c009359beadbf885d8f5462b27a5b2f\",\r\n    \t\"VerifyingKey\": \"d5f70ff60a4e23798f73c40e5b4e0faa63c878ff8f4afc0d41580fe5d5c43437acae8de9a252df65c52c6696c1e6c59266afcbd1ea765a628fb0fae606f56cb6d30408b99eac6ed696deb31ff1f36ec6ede76b6fe5854f47b8125c35684685c3073b6ad4bd4dbcd4fcbc868512eafa5ddd127ac5a5c496722fc4e4d06b5dc2d5e938d4f23442ededeebc015c2d0154df7c8d0125971b47cd6547973d544d5dcc2001f896f0faa5977cd28bd357881cc2de5eb76b20346017a7c5196ca9ab50259529ac4deffd3cc86a899a2de0f40fac1834c6eeaae733b6cf88de2a3e30e77c9682587922d250f33bf75c9cf6a1635062b5cb03b8ff22cbe51558ab51fc67a91d92b86ea10cd6722af6c43f746af199e60fc95bd70077e721bfdb86f38f8e0200000005adb060233159b00a9279478b9c225a219bf154832fe6826e304c09bd4e111142ce869e1f1662273323c1d1a09adee38d70299b786274e6d19532bee429fce7cecde8d82a05cdc3dc9820c4bf85148e3a810edd238a0bc79b3c85d6cf11d0a4459851bf54c4e68f90af804d745ad5a5bf1d78c0ff172eac112da5e3f59642f54c98690ee755d71f0026d0771e97cf2ec4d40097346a328a98655e6527ee893614\"\r\n\t}\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prove-BadPath",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/prove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"prove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify-BadPath",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"AssetIdentifier\": \"1\",\r\n\t\t\"ApprovedLatitude\":   1,\r\n\t\t\"ApprovedLongitude\":  1,\r\n\t\t\"MaxAllowedDistance\": 4,\r\n    \t\"RootHash\": \"20010843042483646368857989544778220800867161747001321856645510996980164522962\",\r\n    \t\"Proof\": \"e399622e07201cb4659e76354a95f983d89f4305868f2f1a91e4a92e29d619539d9af729e9b6d4f166bc58b35384bd7b61b4666790b0bb0290695f4b2e8fa5d227cc5e1c573e60218670151bd711ab2ca2d17b767728fa910e7e49072b3f1884d355022a71ef8af2ee9318373d807e2b8c009359beadbf885d8f5462b27a5b2f\",\r\n    \t\"VerifyingKey\": \"d5f70ff60a4e23798f73c40e5b4e0faa63c878ff8f4afc0d41580fe5d5c43437acae8de9a252df65c52c6696c1e6c59266afcbd1ea765a628fb0fae606f56cb6d30408b99eac6ed696deb31ff1f36ec6ede76b6fe5854f47b8125c35684685c3073b6ad4bd4dbcd4fcbc868512eafa5ddd127ac5a5c496722fc4e4d06b5dc2d5e938d4f23442ededeebc015c2d0154df7c8d0125971b47cd6547973d544d5dcc2001f896f0faa5977cd28bd357881cc2de5eb76b20346017a7c5196ca9ab50259529ac4deffd3cc86a899a2de0f40fac1834c6eeaae733b6cf88de2a3e30e77c9682587922d250f33bf75c9cf6a1635062b5cb03b8ff22cbe51558ab51fc67a91d92b86ea10cd6722af6c43f746af199e60fc95bd70077e721bfdb86f38f8e0200000005adb060233159b00a9279478b9c225a219bf154832fe6826e304c09bd4e111142ce869e1f1662273323c1d1a09adee38d70299b786274e6d19532bee429fce7cecde8d82a05cdc3dc9820c4bf85148e3a810edd238a0bc79b3c85d6cf11d0a4459851bf54c4e68f90af804d745ad5a5bf1d78c0ff172eac112da5e3f59642f54c98690ee755d71f0026d0771e97cf2ec4d40097346a328a98655e6527ee893614\"\r\n\t}\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prove-#YearLimitExceeded",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/prove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"prove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
