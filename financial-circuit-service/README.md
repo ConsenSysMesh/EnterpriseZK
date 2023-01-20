@@ -23,4 +23,5 @@ make run
 3. **Run Postman Collection**
 
 Import futurevalue.postman_collection.json into postman and send requests
+
 Can be found under internal/api/collection
