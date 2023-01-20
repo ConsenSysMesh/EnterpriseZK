@@ -1,7 +1,7 @@
 package location
 
 import (
-	"consensysmesh/entzk/private-location-and-membership-circuit/location"
+	"consensysmesh/entzk/location"
 	"os"
 	"testing"
 
