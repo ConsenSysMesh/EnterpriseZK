@@ -1,7 +1,7 @@
 package location
 
 import (
-	"github.com/consensysMesh/internal/location"
+	"consensysmesh/entzk/private-location-and-membership-circuit/location"
 	"testing"
 
 	"github.com/consensys/gnark-crypto/ecc"

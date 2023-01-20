@@ -1,7 +1,7 @@
 package location
 
 import (
-	"github.com/consensysMesh/internal/location"
+	"consensysmesh/entzk/private-location-and-membership-circuit/location"
 	"os"
 	"testing"
 
@@ -13,10 +13,10 @@ import (
 )
 
 const (
-	r1csPath     = "../export/location.r1cs"
-	pkPath       = "../export/location.pk"
-	vkPath       = "../export/location.vk"
-	solidityPath = "../export/location.sol"
+	r1csPath     = "../../export/location.r1cs"
+	pkPath       = "../../export/location.pk"
+	vkPath       = "../../export/location.vk"
+	solidityPath = "../../export/location.sol"
 )
 
 var correctDistanceWitness = &location.Circuit{
