@@ -13,35 +13,35 @@ import (
 var ExampleValues1 = &futureValue.Circuit{
 	FutureValue:   6000000000,
 	PresentValue:  2345548629,
-	IntrestRate:   110,
+	InterestRate:   110,
 	NumberOfYears: 9,
 }
 
 var ExampleValues2 = &futureValue.Circuit{
 	FutureValue:   9000000,
 	PresentValue:  5831654,
-	IntrestRate:   75,
+	InterestRate:   75,
 	NumberOfYears: 6,
 }
 
 var ExampleValues3 = &futureValue.Circuit{
 	FutureValue:   11088900,
 	PresentValue:  9000000,
-	IntrestRate:   110,
+	InterestRate:   110,
 	NumberOfYears: 2,
 }
 
 var ExampleValues4 = &futureValue.Circuit{
 	FutureValue:   309611009,
 	PresentValue:  85000000,
-	IntrestRate:   90,
+	InterestRate:   90,
 	NumberOfYears: 15,
 }
 
 var ExampleValues5 = &futureValue.Circuit{
 	FutureValue:   881143,
 	PresentValue:  850000,
-	IntrestRate:   9,
+	InterestRate:   9,
 	NumberOfYears: 40,
 }
 

@@ -16,7 +16,7 @@ type Circuit struct {
 	FutureValue  frontend.Variable
 
 	//PUBLIC INPUTS
-	IntrestRate   frontend.Variable `gnark:",public"`
+	InterestRate   frontend.Variable `gnark:",public"`
 	NumberOfYears frontend.Variable `gnark:",public"`
 }
 /*
@@ -30,9 +30,9 @@ type Circuit struct {
 
 func (circuit *Circuit) Define(api frontend.API) error {
 
-	i := circuit.IntrestRate //already x1000
+	i := circuit.InterestRate //already x1000
 
-	//Adds 1000 to intrest
+	//Adds 1000 to interest
 	iplus := api.Add(1000, i)
 
 	//EXPONENT FOR (1000+I)^N--------
