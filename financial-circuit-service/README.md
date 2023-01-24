@@ -1,10 +1,10 @@
 # Future Value Circuit Service
-Go (Golang) API REST Service with Gin Framework and Gnark Zero-Knowledge Fututure Value Circuit
+Go (Golang) API REST Service with Gin Framework and Gnark Zero-Knowledge Future Value Circuit
 
-This folder serves as a fully funcitoning service that allows the user to generate and verify zero-knowledge proofs through the API.
-The ZK circuit takes in the 4 necessary values for calculating future value (Future Value, Present Value, Interest Rate, Number of years). The circuit will then prove that the user correctly calculated the future value, given the other inputs, and generate a proof and proving key. Anyone can then take that proof and proving key, and provide it to the prover function along with the other public values (interest rate and number of years) and the proving key, and cryptographically prove correcness of the end value, without needing the private future and present values. 
+This folder serves as a fully functioning service that allows the user to generate and verify zero-knowledge proofs through the API.
+The ZK circuit takes in the 4 necessary values for calculating the future value (Future Value, Present Value, Interest Rate, and Number of years). The circuit will then prove that the user correctly calculated the future value, given the other inputs, and generate a proof and proving key. Anyone can then take that proof and proving key, and provide it to the prover function along with the other public values (Interest Rate and Number of Years) and the proving key, and cryptographically prove the correctness of the end value, without needing the private future and present values. 
 
-This overall service will be expanded further with more circuits to create a full suite of financial calculations that enterprise users, such as banks, can utilize to eliminate the need for a middle-man to be their third party verifier. The benefits of which are privicy and speed, and accuracy. 
+This overall service will be expanded further with more circuits to create a full suite of financial calculations that enterprise users, such as banks, can utilize to eliminate the need for a middle-man to be their third-party verifier. The benefits of which are privacy and speed, and accuracy.
 
 ## 1. Clone and Change To FutureValue Directory
 
