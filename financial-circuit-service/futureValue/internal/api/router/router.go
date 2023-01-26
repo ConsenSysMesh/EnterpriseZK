@@ -13,6 +13,8 @@ func Setup() *gin.Engine {
 	// Middlewares
 	app.Use(gin.Recovery())
 	app.NoRoute(middleware.NoRouteHandler())
+	app.Use(middleware.CORSMiddleware())
+
 
 	// Routes
 	// ================== Proof Route
