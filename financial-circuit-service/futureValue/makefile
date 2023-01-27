@@ -15,3 +15,12 @@ vet:
 
 lint: 
 	staticcheck ./...
+
+build-docker: build
+	docker build . -t api-rest
+
+run-docker: build-docker
+	docker run -p 3000:3000 api-rest
+
+test-docker:
+	go test -v ./internal/tests/container_test.go
