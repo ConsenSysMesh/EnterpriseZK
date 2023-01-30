@@ -1,5 +1,5 @@
 server:
-  port: "3000"
+  port: "10000"
   secret: "bksi4kgglsejs3"
   #release | debug
   mode: "release"
