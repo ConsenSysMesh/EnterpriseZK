@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/consensys/gnark v0.7.2-0.20220915193524-b33f88c79af6
 	github.com/consensys/gnark-crypto v0.8.0
+	github.com/sirupsen/logrus v1.9.0
 )
 
 require (
