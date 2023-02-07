@@ -10,7 +10,7 @@ func AssignFullFutureValueCircuit(d json.Data) *futureValue.Circuit {
 		FutureValue:   d.FutureValue,
 		PresentValue:  d.PresentValue,
 		NumberOfYears: d.NumberOfYears,
-		IntrestRate:   int64(d.IntrestRate * 1000),
+		InterestRate:   int64(d.InterestRate * 1000),
 	}
 	return assignment
 }
@@ -18,7 +18,7 @@ func AssignFullFutureValueCircuit(d json.Data) *futureValue.Circuit {
 func AssignPublicFutureValueCircuit(d json.PublicData) *futureValue.Circuit {
 	assignment := &futureValue.Circuit{
 		NumberOfYears: d.NumberOfYears,
-		IntrestRate:   int64(d.IntrestRate * 1000),
+		InterestRate:   int64(d.InterestRate * 1000),
 	}
 	return assignment
 }

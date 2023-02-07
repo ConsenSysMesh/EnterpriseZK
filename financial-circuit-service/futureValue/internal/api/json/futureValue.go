@@ -1,14 +1,14 @@
 package json
 
 type Data struct {
-	IntrestRate   float64 `json:"IntrestRate" binding:"required"`
+	InterestRate   float64 `json:"InterestRate" binding:"required"`
 	NumberOfYears int64   `json:"NumberOfYears" binding:"required"`
 	FutureValue   int64   `json:"FutureValue" binding:"required"`
 	PresentValue  int64   `json:"PresentValue" binding:"required"`
 }
 
 type PublicData struct {
-	IntrestRate   float64 `json:"IntrestRate" binding:"required"`
+	InterestRate   float64 `json:"InterestRate" binding:"required"`
 	NumberOfYears int64   `json:"NumberOfYears" binding:"required"`
 	Proof         string  `json:"Proof" binding:"required"`
 	VerifyingKey  string  `json:"VerifyingKey" binding:"required"`

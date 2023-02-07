@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"InterestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:3000/prove",
@@ -64,7 +64,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"InterestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:3000/prove",
@@ -115,7 +115,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"IntrestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
+					"raw": "{\n\t\"FutureValue\":   6000000000,\n\t\"PresentValue\":  2345548629,\n\t\"InterestRate\":   110,\n\t\"NumberOfYears\": 9 \n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:3000/prove",
