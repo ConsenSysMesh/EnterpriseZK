@@ -11,3 +11,4 @@ Reach out to the team with questions or collaboration inquiries at research@mesh
 
 ## Blogs & Reports
 - [The zkEVM: A Natural Execution Framework for Enterprise Baseline Applications](https://www.mesh.xyz/insights/the-zkevm-a-natural-execution-framework-for-enterprise-baseline-applications)
+- [Applying Zero Knowledge Cryptography in the Mobility Industry](https://www.mesh.xyz/insights/applying-zero-knowledge-cryptography-in-the-mobility-industry)
