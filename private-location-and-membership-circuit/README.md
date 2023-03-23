@@ -1,7 +1,10 @@
 ## **Proof of Location and Membership Circuit**
 This folder showcases the zero knowledge circuit work, utilizing the GROTH16 prover system, testing on the BN254 curve, performed to generate and verify flat distance and membership proofs within a specified maximum distance from a specified center point.
 
-This zero-knowledge circuit can be used in many scenarios. The original scenario this circuit was developed for was to prove that a vehicle is on a specific car dealer lot, and belongs to the fleet of the dealer on that dealer's lot.
+The original scenario this circuit was developed for was to prove that a vehicle is on a specific car dealer lot and belongs to the fleet of the dealer on that dealer's lot to eliminate the need for auditors to manually visit the dealership for audits. Read more about the project [here](https://www.mesh.xyz/insights/applying-zero-knowledge-cryptography-in-the-mobility-industry).
+
+This zero knowledge circuit can be used in many scenarios. Can you think of a use case where you need to prove that something belongs to a group (membership) and is within specific coordinates (location)? Now imagine verifiably proving it without sharing any information.
+
 
 ## **Run Tests**
 
