@@ -6,7 +6,7 @@ This circuit was originally to prove that a vehicle is on a specific car dealer 
 This zero knowledge circuit can be used in many scenarios. Can you think of a use case where you need to prove that something belongs to a group (membership) and is within specific coordinates (location)? Now imagine verifiably proving it without sharing any information.
 
 Read our blogs about the work here
-- [Zero Knowledge Cryptography in the Mobility Industry](https://www.mesh.xyz/insights/applying-zero-knowledge-cryptography-in-the-mobility-industry).
+- [Zero Knowledge Cryptography in the Mobility Industry](https://www.mesh.xyz/insights/applying-zero-knowledge-cryptography-in-the-mobility-industry)
 - [Zero Knowledge IoT- Securing Data at the Edge](https://www.mesh.xyz/insights/zero-knowledge-iot)
 
 ## **Run Tests**
