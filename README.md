@@ -16,3 +16,4 @@ Reach out to the team with questions or collaboration inquiries at research@mesh
 - [The Baseline Protocol Across Industries: The Case of Telecommunications](https://www.mesh.xyz/insights/the-baseline-protocol-across-industries)
 - [Decentralized Business Automation as a Service Presentation](https://www.youtube.com/watch?v=e24-RpY7f_k)
 - [Decentralized Business Automation as a Service Blog](https://www.mesh.xyz/insights/decentralized-business-automation-as-a-service)
+- [Automating Billing and Settlement with the Baseline Protocol](https://www.mesh.xyz/insights/automating-billing-settlement-with-the-baseline-protocol)
