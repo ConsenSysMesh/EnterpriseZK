@@ -17,3 +17,4 @@ Reach out to the team with questions or collaboration inquiries at research@mesh
 - [Decentralized Business Automation as a Service Presentation](https://www.youtube.com/watch?v=e24-RpY7f_k)
 - [Decentralized Business Automation as a Service Blog](https://www.mesh.xyz/insights/decentralized-business-automation-as-a-service)
 - [Automating Billing and Settlement with the Baseline Protocol](https://www.mesh.xyz/insights/automating-billing-settlement-with-the-baseline-protocol)
+- [Innovation Amplified: Pioneering Digital Transformation with SLA Automation & Blockchain in Telecom - Stream](https://www.youtube.com/watch?v=jvVG4BTDrnU)
